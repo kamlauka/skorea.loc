@@ -1,0 +1,33 @@
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 43px);
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: inherit;
+    width: 100%;
+    background: linear-gradient(rgba(186,57,55,0.7), rgba(186,57,55,0.7)), url("../images/background-auto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    width: 60vw;
+    margin: 3vw auto;
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+

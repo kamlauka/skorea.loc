@@ -1,0 +1,113 @@
+.info {
+  position: relative;
+  &__button {
+    position: absolute!important;
+    right: 10vw;
+    bottom: 4.3vw;
+  }
+  &__background-title_position_left {
+    bottom: -9vw;
+    top: auto;
+    left: -47px;
+  }
+}
+
+.infographic-container {
+  position: relative;
+  padding: 150px 7% 0;
+  background: #eeeeee;
+  background: -moz-linear-gradient(45deg, #eeeeee 0%, #eeeeee 68%, #ffffff 68%, #ffffff 100%);
+  background: -webkit-linear-gradient(45deg, #eeeeee 0%,#eeeeee 68%,#ffffff 68%,#ffffff 100%);
+  background: linear-gradient(40deg, #eeeeee 0%,#eeeeee 74%,#ffffff 74%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 );
+}
+
+.infographic {
+  display: flex;
+  justify-content: flex-start;
+  height: 20vw;
+  width: 80%;
+}
+
+
+.rhomb-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px -4vw;
+  height: 44%;
+  transform: rotate(45deg);
+  flex: 1;
+
+  &__rhomb {
+    width: 7vw;
+    height: 7vw;
+    padding: 20px;
+    background-color: white;
+    margin: 0 1vw;
+
+    &_color_main-color {
+      background-color: $color-main;
+    }
+
+    &_color_add-color {
+      background-color: $color-add;
+    }
+  }
+
+  &__icon {
+    transform: rotate(-45deg);
+    margin: auto;
+    height: 3vw;
+
+    &_ship {
+      margin-left: -1vw;
+      margin-top: 1vw;
+    }
+
+    &_car {
+      margin-left: -0.3vw;
+      margin-top: 0.4vw;
+    }
+  }
+
+  &__text {
+    margin: auto;
+    font-size: 0.8vw;
+    transform: rotate(-45deg);
+    text-align: center;
+    width: 9vw;
+  }
+}
+
+.advantages {
+  margin: 5vw 10vw 10vw;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  &__picture {
+    width: 5vw;
+    margin-right: 3vw;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    &:nth-child(2n + 1) {
+      margin-right: 20px;
+    }
+  }
+
+
+
+  &__title {
+    margin: 0;
+  }
+}

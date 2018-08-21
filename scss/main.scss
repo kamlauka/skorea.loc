@@ -1,0 +1,91 @@
+@import "variables.scss";
+@import "header.scss";
+@import "title-page.scss";
+@import "about-us.scss";
+@import "info.scss";
+
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('MyriadPro-Regular.eot');
+  src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('MyriadPro-Regular.woff') format('woff'),
+  url('MyriadPro-Regular.otf') format('otf'),
+  url('MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+
+}
+
+.main-color {
+  color: $color-main;
+}
+
+.main-padding {
+  padding: $padding-main;
+}
+
+.white-color {
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-weight: normal;
+}
+
+.rhomb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 10vw;
+  margin: 6vh 3vw;
+  padding: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+
+  &__element {
+    transform: rotate(-45deg);
+    width: 110%;
+    margin: auto;
+  }
+}
+
+.button {
+  position: relative;
+  border: none;
+  padding: 12px 20px;
+  background-color: $color-main;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 67%;
+    top: -3px;
+    right: -3px;
+    border-top: 2px solid $color-main;
+    border-right: 2px solid $color-main;
+  }
+
+  &_border_white {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 25%;
+      height: 67%;
+      top: -3px;
+      right: -3px;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+    }
+  }
+}
