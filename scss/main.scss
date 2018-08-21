@@ -4,6 +4,9 @@
 @import "about-us.scss";
 @import "info.scss";
 @import "popular.scss";
+@import "price-reviews.scss";
+@import "feedback.scss";
+@import "footer.scss";
 
 
 @font-face {
@@ -28,9 +31,6 @@ body {
   color: $color-main;
 }
 
-.main-padding {
-  padding: $padding-main;
-}
 
 .white-color {
   color: white;

@@ -1,0 +1,28 @@
+.feedback {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+
+  &__block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+
+    &_color_main-color {
+      background-color: $color-main;
+    }
+
+    &_color_add-color {
+      background-color: $color-add;
+    }
+  }
+}

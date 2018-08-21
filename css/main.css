@@ -4,7 +4,8 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: white; }
+  background-color: white;
+  padding: 0 4.15%; }
   .header__social-icons {
     display: flex;
     flex: 1;
@@ -272,6 +273,67 @@
   top: 35%;
   width: 100%; }
 
+.price-reviews {
+  padding: 4.15%; }
+  .price-reviews__container {
+    display: flex;
+    flex-direction: row; }
+  .price-reviews__block {
+    flex: 1; }
+    .price-reviews__block:nth-child(2n+1) {
+      flex: 1.5;
+      margin-right: 1%; }
+  .price-reviews__title {
+    font-weight: normal;
+    text-align: center; }
+  .price-reviews__button {
+    margin: 50px auto;
+    display: block; }
+
+.auto-price__cell {
+  background-color: #eeeeee;
+  padding: 20px;
+  border: 5px solid white;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold; }
+  .auto-price__cell_text_grey {
+    color: #545454; }
+  .auto-price__cell_text_white {
+    color: white; }
+  .auto-price__cell_text_main-color {
+    color: #0377BC; }
+  .auto-price__cell_text_add-color {
+    color: #974C4E; }
+  .auto-price__cell_back_main-color {
+    background-color: #0377BC; }
+  .auto-price__cell_back_add-color {
+    background-color: #974C4E; }
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0; }
+  .feedback__block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  .feedback__title {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    text-align: center; }
+    .feedback__title_color_main-color {
+      background-color: #0377BC; }
+    .feedback__title_color_add-color {
+      background-color: #974C4E; }
+
+.footer {
+  background-color: #974C4E;
+  padding: 25px 4.15%; }
+
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("MyriadPro-Regular.eot");
@@ -286,9 +348,6 @@ body {
 
 .main-color {
   color: #0377BC; }
-
-.main-padding {
-  padding: 0 20px; }
 
 .white-color {
   color: white; }
