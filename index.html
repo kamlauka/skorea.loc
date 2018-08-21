@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <title>Title</title>
 </head>
 <body>
@@ -182,12 +189,51 @@
     </div>
 </section>
 
-<section>
+<section class="popular">
+    <div class="popular__hyundai auto-carousel">
+        <img class = "auto-carousel__logo" src="images/hyundai%20logo%202.png" alt="hyundai logo">
+        <span class="owl-prev auto-carousel__left-scroll"></span>
+        <div class="owl-carousel">
+            <img style="width: 23vw;" src="images/hyundai1.png" alt="">
+            <img style="width: 23vw;" src="images/hyundai2.png" alt="">
+            <img style="width: 23vw;" src="images/hyundai3.png" alt="">
+            <img style="width: 23vw;" src="images/hyundai2.png" alt="">
+            <img style="width: 23vw;" src="images/hyundai3.png" alt="">
+            <img style="width: 23vw;" src="images/hyundai1.png" alt="">
+        </div>
+        <span class="owl-next auto-carousel__right-scroll"></span>
+    </div>
+    <div class="popular__kia auto-carousel">
+        <img class = "auto-carousel__logo" src="images/kia%20logo%202.png" alt="kia logo">
+        <span class="owl-prev auto-carousel__left-scroll"></span>
+        <div class="owl-carousel">
+            <img style="width: 23vw;" src="images/kia1.png" alt="">
+            <img style="width: 23vw;" src="images/kia2.png" alt="">
+            <img style="width: 23vw;" src="images/kia3.png" alt="">
+            <img style="width: 23vw;" src="images/kia2.png" alt="">
+            <img style="width: 23vw;" src="images/kia1.png" alt="">
+            <img style="width: 23vw;" src="images/kia3.png" alt="">
+        </div>
+        <span class="owl-next auto-carousel__right-scroll"></span>
+    </div>
+    <div class="popular__genesis auto-carousel">
+        <img class = "auto-carousel__logo" src="images/genezis%20logo2.png" alt="genesis logo">
+        <span class="owl-prev auto-carousel__left-scroll"></span>
+        <div class="owl-carousel">
+            <img style="width: 23vw;" src="images/genesis1.png" alt="">
+            <img style="width: 23vw;" src="images/genesis2.png" alt="">
+            <img style="width: 23vw;" src="images/genesis3.png" alt="">
+        </div>
+        <span class="owl-next auto-carousel__right-scroll"></span>
+    </div>
 
 </section>
 
-<section>
+<section
+>
+
     <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+
 </section>
 
 <section>
@@ -197,5 +243,26 @@
 <footer>
 
 </footer>
+<link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+<script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin: 80,
+        responsiveClass:true,
+        nav: true,
+        autoWidth: true,
+        responsive:{
+            0:{
+                items:1,
+                // nav:true
+            },
+            600:{
+                items:3,
+                // nav:false
+            }
+        }
+    })
+</script>
 </body>
 </html>

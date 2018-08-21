@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     background: #eeeeee;
     background: linear-gradient(30deg, #ba3937 0%,#ba3937 7%,rgba(255,255,255,0) 7%,rgba(255,255,255,0) 100%), linear-gradient(to bottom,  #ffffff 0%, #ffffff 73.5%,  #eeeeee 73.5%, #eeeeee 100%);
   }

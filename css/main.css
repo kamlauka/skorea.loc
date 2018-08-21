@@ -73,6 +73,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     background: #eeeeee;
     background: linear-gradient(30deg, #ba3937 0%, #ba3937 7%, rgba(255, 255, 255, 0) 7%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, #ffffff 0%, #ffffff 73.5%, #eeeeee 73.5%, #eeeeee 100%); }
   .about-us__video {
@@ -204,6 +205,72 @@
       margin-right: 20px; }
   .advantages__title {
     margin: 0; }
+
+.popular {
+  padding: 4.15%;
+  background: white;
+  background: -moz-linear-gradient(-45deg, white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
+  background: -webkit-linear-gradient(-45deg, white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
+  background: linear-gradient(135deg, white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 ); }
+  .popular__hyundai {
+    border-bottom: 5px solid #0377BC; }
+  .popular__kia {
+    border-bottom: 5px solid #974C4E; }
+
+.auto-carousel__logo {
+  margin: 30px auto;
+  display: block; }
+
+.auto-carousel__picture {
+  width: 20vw; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 70%; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 90%;
+  margin: auto; }
+
+.owl-carousel .owl-nav button.owl-prev.disabled {
+  background: url(../../../../images/arrow-no-active.png);
+  background-size: 100% 100%;
+  width: 22px;
+  height: 40px;
+  transform: rotate(0); }
+
+.owl-carousel .owl-nav button.owl-next.disabled {
+  background: url(../../../../images/arrow-no-active.png);
+  background-size: 100% 100%;
+  width: 22px;
+  height: 40px;
+  transform: rotate(180deg); }
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  background: url(../../../../images/arrow-active.png);
+  background-size: 100% 100%;
+  width: 22px;
+  height: 40px; }
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0;
+  background: url(../../../../images/arrow-active.png);
+  background-size: 100% 100%;
+  width: 22px;
+  height: 40px;
+  transform: rotate(180deg); }
+
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  width: 100%; }
 
 @font-face {
   font-family: 'Myriad Pro Regular';
