@@ -1,5 +1,5 @@
 .about-us {
-  margin-top: 40px;
+  padding-top: 60px;
   position: relative;
 
   &__text-block {
@@ -49,8 +49,8 @@
 .achievements {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: auto;
   margin-top: 40px;
 }
@@ -64,10 +64,45 @@
   min-width: 15vw;
   box-sizing: border-box;
   flex: 1;
+
+  @media (max-width: 1220px) {
+    margin: 1vw 5vw;
+    min-width: 20vw;
+  }
+
+  @media (max-width: 915px) {
+    margin: 1vw 1vw;
+    min-width: 24vw;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin: 1vw 3vw;
+    min-width: 6vw;
+  }
+
+
+
   &__picture {
     height: 4vw;
+
+    @media (max-width: $width-mobile) {
+      height: 40px;
+    }
+
+    @media (max-width: 500px) {
+      height: 30px;
+    }
+
+    @media (max-width: 400px) {
+      height: 20px;
+    }
   }
   &__label {
     font-size: 1.1em;
+    text-align: center;
+
+    @media (max-width: $width-mobile) {
+      font-size: 0.9em;
+    }
   }
 }

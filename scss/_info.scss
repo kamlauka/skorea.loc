@@ -1,9 +1,21 @@
 .info {
   position: relative;
+  display: flex;
+  flex-direction: column;
   &__button {
-    position: absolute!important;
-    right: 10vw;
-    bottom: 4.3vw;
+    //position: absolute!important;
+    //right: 10vw;
+    //bottom: 4.3vw;
+
+    width: 200px;
+    margin-left: auto;
+    margin-right: 3vw;
+    top: 80px;
+    display: block;
+
+    @media (max-width: $width-mobile) {
+      margin: auto;
+    }
   }
   &__background-title_position_left {
     bottom: -9vw;
@@ -14,12 +26,18 @@
 
 .infographic-container {
   position: relative;
-  padding: 150px 7% 0;
+  padding: 170px 7% 0;
   background: $color-add2-gray;
   background: -moz-linear-gradient(45deg, $color-add2-gray 0%, $color-add2-gray 68%, #ffffff 68%, #ffffff 100%);
   background: -webkit-linear-gradient(45deg, $color-add2-gray 0%,$color-add2-gray 68%,#ffffff 68%,#ffffff 100%);
   background: linear-gradient(40deg, $color-add2-gray 0%,$color-add2-gray 74%,#ffffff 74%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-add2-gray, endColorstr='#ffffff',GradientType=1 );
+
+  @media (max-width: $width-mobile) {
+    //height: 180vw;
+    padding: 20vw 7% 0;
+    background: $color-add2-gray;
+  }
 }
 
 .infographic {
@@ -30,7 +48,7 @@
 
   @media (max-width: $width-mobile) {
     flex-direction: column;
-    height: 125vw;
+    height: auto;
     width: 100%;
   }
 }
@@ -46,12 +64,25 @@
   transform: rotate(45deg);
   flex: 1;
 
+  @media (max-width: $width-mobile) {
+    margin: 7vw 0vw;
+  }
+
+  @media (max-width: 400px) {
+    margin: 8vw 0vw;
+  }
+
   &__rhomb {
     width: 7vw;
     height: 7vw;
     padding: 20px;
     background-color: white;
     margin: 0 1vw;
+
+    @media (max-width: $width-mobile) {
+      width: 20vw;
+      height: 20vw;
+    }
 
     &_color_main-color {
       background-color: $color-main;
@@ -67,9 +98,18 @@
     margin: auto;
     height: 3vw;
 
+    @media (max-width: $width-mobile) {
+      height: 8vw;
+    }
+
     &_ship {
       margin-left: -1vw;
       margin-top: 1vw;
+
+      @media (max-width: $width-mobile) {
+        margin-left: -3vw;
+        margin-top: 1vw;
+      }
     }
 
     &_car {
@@ -84,11 +124,29 @@
     transform: rotate(-45deg);
     text-align: center;
     width: 9vw;
+
+    @media (max-width: $width-mobile) {
+      margin: auto;
+      font-size: 0.6em;
+      width: 100%;
+      padding: 0 20px;
+      margin-left: -1vw;
+      margin-top: 2vw;
+    }
+
+    @media (max-width: $width-mobile) {
+      font-size: 0.46em;
+    }
   }
 }
 
 .advantages {
-  margin: 5vw 10vw 8vw;
+  margin: 9vw 10vw 8vw;
+
+  @media (max-width: $width-mobile) {
+    margin: 110px 10vw 8vw;
+  }
+
   &__container {
     display: flex;
     flex-direction: row;

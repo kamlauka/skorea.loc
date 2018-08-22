@@ -29,13 +29,17 @@
   width: 100%;
 
   @media (max-width: $width-mobile) {
-    top: -24px;
+    top: -3vw;
   }
 
   &__logo {
     display: block;
     margin: auto;
     width: 8vw;
+
+    @media (max-width: $width-mobile) {
+      width: 13vw;
+    }
   }
 }
 
@@ -48,6 +52,10 @@
 
 .phones {
   position: relative;
+
+  @media (max-width: 400px) {
+    font-size: 0.6em;
+  }
 
   &__logo {
     position: absolute;
