@@ -4,6 +4,10 @@
   &__container {
     display: flex;
     flex-direction: row;
+
+    @media (max-width: $width-mobile) {
+      flex-direction: column;
+    }
   }
 
   &__block {

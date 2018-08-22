@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Title</title>
 </head>
 <body>
@@ -384,11 +382,11 @@
         responsive:{
             0:{
                 items:1,
-                // nav:true
+                autoWidth: false,
+                margin: 0,
             },
-            600:{
+            768:{
                 items:3,
-                // nav:false
             }
         }
     })

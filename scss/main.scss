@@ -90,3 +90,16 @@ body {
     }
   }
 }
+
+.background-title {
+  position: absolute;
+  z-index: -1;
+  font-size: 7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eeeeee;
+
+  @media (max-width: $width-mobile) {
+    display: none;
+  }
+}

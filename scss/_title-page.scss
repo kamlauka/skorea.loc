@@ -28,6 +28,10 @@
     margin: 3vw auto;
     font-size: 0.9em;
     text-align: center;
+
+    @media (max-width: $width-mobile) {
+      display: none;
+    }
   }
 }
 
