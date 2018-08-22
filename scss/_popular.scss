@@ -1,10 +1,11 @@
 .popular {
+  position: relative;
   padding: $padding-main;
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(-45deg,  white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
-  background: -webkit-linear-gradient(-45deg, white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
-  background: linear-gradient(135deg, white 0%, white 50%, #eeeeee 50%, #eeeeee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
+  background: -moz-linear-gradient(-45deg,  white 0%, white 50%, $color-add2-gray 50%, $color-add2-gray 100%);
+  background: -webkit-linear-gradient(-45deg, white 0%, white 50%, $color-add2-gray 50%, $color-add2-gray 100%);
+  background: linear-gradient(135deg, white 0%, white 50%, $color-add2-gray 50%, $color-add2-gray 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=$color-add2-gray,GradientType=1 );
 
   &__hyundai {
     border-bottom: 5px solid $color-main;
@@ -20,6 +21,9 @@
   &__logo {
     margin: 30px auto;
     display: block;
+    @media (max-width: $width-mobile) {
+      width: 30vw;
+    }
   }
 
   &__picture {

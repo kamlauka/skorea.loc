@@ -1,4 +1,36 @@
 .footer {
-  background-color: $color-add;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 25px $padding-main;
+  background-color: $color-add;
+
+  @media (max-width: $width-mobile) {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__social-icons {
+    text-align: center;
+  }
+}
+
+.terlabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media (max-width: $width-mobile) {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__text {
+    color: white;
+    margin: 5px;
+  }
+
+
 }

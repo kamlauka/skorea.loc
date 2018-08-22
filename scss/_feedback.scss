@@ -1,10 +1,34 @@
 .feedback {
   display: flex;
   flex-direction: row;
-  padding: 50px 0;
+  position: relative;
+  padding: 60px 0 110px;
+  overflow: hidden;
 
   @media (max-width: $width-mobile) {
     flex-direction: column;
+  }
+
+  &__background-title {
+    bottom: 15px;
+    left: auto;
+    right: -3vw;
+  }
+
+  &__button {
+    width: 50%;
+    margin: 15px auto;
+    border: none;
+    padding: 12px 20px;
+    background-color: $color-main;
+
+    @media (max-width: 900px) {
+      width: 60%;
+    }
+  }
+
+  &__icon {
+    color: $color-add-gray;
   }
 
   &__block {
@@ -19,6 +43,7 @@
     width: 100%;
     display: block;
     padding: 10px 0;
+    margin-bottom: 60px;
     text-align: center;
 
     &_color_main-color {
@@ -27,6 +52,83 @@
 
     &_color_add-color {
       background-color: $color-add;
+    }
+
+    @media (max-width: $width-mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    width: 200px;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+  }
+
+  &__info-title {
+    font-weight: bold;
+    font-size: 0.85em;
+    margin: 2px 0;
+
+    @media (max-width: $width-mobile) {
+      font-size: 1.2em;
+    }
+  }
+
+  &__info {
+    text-align: center;
+
+    @media (max-width: $width-mobile) {
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+
+  @media (max-width: $width-mobile) {
+    width: 90%;
+  }
+
+  &__element {
+    background-color: $color-add2-gray;
+    border: 0 solid transparent;
+    margin: 10px 0;
+    height: 27px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+
+    &_textarea {
+      height: 150px;
+      resize: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__element-border {
+    display: block;
+    position: relative;
+    z-index: -1;
+    bottom: -38px;
+    left: -1px;
+    height: 2px;
+    border: 1px solid #545454;
+    width: 25vw;
+
+    @media (max-width: $width-mobile) {
+      width: 100%;
+    }
+
+    &_textarea {
+      bottom: 3px;
+
     }
   }
 }

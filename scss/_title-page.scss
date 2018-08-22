@@ -3,18 +3,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: calc(100vh - 43px);
+  min-height: 600px;
 
+  @media (max-width: $width-mobile) {
+    height: 40vh;
+    min-height: 400px;
+  }
 
   &:before {
     content: '';
     position: absolute;
     z-index: -1;
     height: inherit;
+    min-height: 600px;
     width: 100%;
     background: linear-gradient(rgba(186,57,55,0.7), rgba(186,57,55,0.7)), url("../images/background-auto.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: $width-mobile) {
+      height: 40vh;
+      min-height: 400px;
+    }
   }
 
   &__logo-container {
@@ -29,7 +41,7 @@
     font-size: 0.9em;
     text-align: center;
 
-    @media (max-width: $width-mobile) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
