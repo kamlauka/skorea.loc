@@ -21,27 +21,28 @@
     js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.1';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<a name="title-page"></a>
 <header class="header main-padding">
     <div class="social-icons header__social-icons">
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover" href="">
             <span class="fa-stack fa-stack_mini fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-stack-2x_mini main-color"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-stack-1x_mini fa-inverse"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover" href="">
             <span class="fa-stack fa-stack_mini fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-stack-2x_mini main-color"></i>
                 <i class="fa fa-instagram fa-stack-1x fa-stack-1x_mini fa-inverse"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover" href="">
             <span class="fa-stack fa-stack_mini fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-stack-2x_mini main-color"></i>
                 <i class="fa fa-google-plus fa-stack-1x fa-stack-1x_mini fa-inverse"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover" href="">
             <span class="fa-stack fa-stack_mini fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-stack-2x_mini main-color"></i>
                 <i class="fa fa-youtube fa-stack-1x fa-stack-1x_mini fa-inverse"></i>
@@ -67,10 +68,10 @@
     <div class="navigation">
         <p class="navigation__title">Skoreacar <span class="navigation__digit">1</span></p>
         <p class="navigation__element navigation__element_active"></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#about-us"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#info"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#popular"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#price-reviews"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </div>
     <h2 class="title">Пригоняем авто из Кореи</h2>
@@ -85,17 +86,22 @@
 
     </div>
     <p class="title-page__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deleniti dolor ea libero quia ratione rem repellat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore laboriosam magni minima nam nesciunt odio, officiis optio voluptas voluptates.</p>
-    <button class="button button_border_white white-color title-page__button">Получить варианты</button>
+    <a class="anchor" href="#feedback">
+        <span class="button-container button-container_border_white">
+            <button class="button button_border_white white-color title-page__button">Получить варианты</button>
+        </span>
+    </a>
 </section>
 
+<a name="about-us"></a>
 <section class="about-us">
     <div class="navigation">
         <p class="navigation__title">О нас <span class="navigation__digit">2</span></p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#title-page"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_active"></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#info"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#popular"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#price-reviews"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </div>
     <div class="about-us__text-block">
@@ -122,14 +128,15 @@
     <iframe class="about-us__video" src="https://www.youtube.com/embed/8W1fuOnFxRU" frameborder="0" allowfullscreen></iframe>
 </section>
 
+<a name="info"></a>
 <section class="info">
     <div class="navigation">
         <p class="navigation__title">Информация для вас <span class="navigation__digit">3</span></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#title-page"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#about-us"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_active"></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#popular"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#price-reviews"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </div>
     <div class="infographic-container">
@@ -175,7 +182,11 @@
                 </div>
             </div>
         </div>
-        <button class="button white-color info__button">Рассчитать стоимость</button>
+        <a class="anchor info__button-container" href="#feedback">
+        <span class="button-container">
+            <button class="button white-color info__button">Рассчитать стоимость</button>
+        </span>
+        </a>
     </div>
     <div class="advantages">
         <div class="advantages__container">
@@ -215,14 +226,15 @@
     </div>
 </section>
 
+<a name="popular"></a>
 <section class="popular">
     <div class="navigation">
         <p class="navigation__title">Популярные авто <span class="navigation__digit">4</span></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#title-page"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#about-us"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#info"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_active"></p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#price-reviews"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </div>
     <div class="popular__hyundai auto-carousel">
@@ -263,13 +275,14 @@
     </div>
 </section>
 
+<a name="price-reviews"></a>
 <section class="price-reviews">
     <div class="navigation">
         <p class="navigation__title">Цена\Качество <span class="navigation__digit">5</span></p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
-        <p class="navigation__element">&#9632;</p>
+        <a class="anchor" href="#title-page"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#about-us"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#info"><p class="navigation__element">&#9632;</p></a>
+        <a class="anchor" href="#popular"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_active"></p>
         <p class="navigation__element navigation__element_triangle"><i class="fa fa-caret-down" aria-hidden="true"></i></p>
     </div>
@@ -382,9 +395,15 @@
             <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
         </div>
     </div>
-    <button class="button white-color price-reviews__button">Задать вопрос</button>
+    <a class="anchor price-reviews__button-container" href="#feedback">
+        <span class="button-container">
+            <button class="button white-color">Задать вопрос</button>
+        </span>
+    </a>
+
 </section>
 
+<a name="feedback"></a>
 <section class="feedback">
     <div class="navigation">
         <p class="navigation__title">Обратная связь <span class="navigation__digit">6</span></p>
@@ -428,25 +447,25 @@
 
 <footer class="footer">
     <div class="social-icons footer__social-icons">
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover-footer-icon" href="">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x  fa-inverse"></i>
                 <i class="fa fa-facebook fa-stack-1x main-color"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover-footer-icon" href="">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-instagram fa-stack-1x main-color"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover-footer-icon" href="">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-google-plus fa-stack-1x main-color"></i>
             </span>
         </a>
-        <a class="social-icons__icon" href="">
+        <a class="social-icons__icon hover-footer-icon" href="">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
                 <i class="fa fa-youtube fa-stack-1x main-color"></i>
@@ -500,7 +519,8 @@
     }
     else {
         $(".owl-carousel__picture").css({'width': '23vw'})
-    }
+    };
+
     $(window).resize(function() {
         if ($(window).width() < 768) {
             $(".owl-carousel__picture").css({'width': '80%', 'margin-left': '5%'})
@@ -509,6 +529,15 @@
             $(".owl-carousel__picture").css({'width': '23vw'})
         }
     });
+
+    $(function(){
+        $("a[href^='#']").click(function(){
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+        });
+    });
+
 
 </script>
 </body>

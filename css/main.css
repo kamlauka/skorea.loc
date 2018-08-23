@@ -192,12 +192,19 @@
   flex-direction: column; }
   .info__button {
     width: 200px;
+    display: block; }
+  .info__button-container {
+    display: flex;
     margin-left: auto;
     margin-right: 3vw;
-    top: 80px;
-    display: block; }
+    position: relative;
+    top: -7vw;
+    width: 200px; }
+    @media (max-width: 1450px) {
+      .info__button-container {
+        position: static; } }
     @media (max-width: 768px) {
-      .info__button {
+      .info__button-container {
         margin: auto; } }
   .info__background-title_position_left {
     bottom: -2vw;
@@ -212,6 +219,9 @@
   background: -webkit-linear-gradient(45deg, #eeeeee 0%, #eeeeee 68%, #ffffff 68%, #ffffff 100%);
   background: linear-gradient(40deg, #eeeeee 0%, #eeeeee 74%, #ffffff 74%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-add2-gray, endColorstr='#ffffff',GradientType=1 ); }
+  @media (max-width: 1450px) {
+    .infographic-container {
+      padding: 170px 7% 40px; } }
   @media (max-width: 768px) {
     .infographic-container {
       padding: 20vw 7% 0;
@@ -222,6 +232,9 @@
   justify-content: flex-start;
   height: 20vw;
   width: 80%; }
+  @media (max-width: 1450px) {
+    .infographic {
+      height: 18vw; } }
   @media (max-width: 768px) {
     .infographic {
       flex-direction: column;
@@ -411,9 +424,10 @@
   .price-reviews__title {
     font-weight: normal;
     text-align: center; }
-  .price-reviews__button {
+  .price-reviews__button-container {
+    display: flex;
     margin: 50px auto;
-    display: block; }
+    justify-content: center; }
 
 .auto-price {
   margin: auto; }
@@ -466,6 +480,10 @@
     border: none;
     padding: 12px 20px;
     background-color: #0377BC; }
+    .feedback__button:hover {
+      background-color: #2685bc; }
+    .feedback__button:active {
+      background-color: #035c98; }
     @media (max-width: 900px) {
       .feedback__button {
         width: 60%; } }
@@ -580,6 +598,10 @@ body {
   font-family: "Myriad Pro Regular", sans-serif;
   color: #363636; }
 
+.anchor {
+  text-decoration: none;
+  color: #363636; }
+
 .main-color {
   color: #0377BC; }
 
@@ -630,6 +652,49 @@ body {
     border-top: 2px solid white;
     border-right: 2px solid white; }
 
+.button-container {
+  position: relative;
+  display: block; }
+  .button-container::before, .button-container::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box; }
+  .button-container::before {
+    bottom: -1px;
+    left: -3px;
+    border-left: 2px solid #0377BC;
+    border-top: 2px solid #0377BC;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s; }
+  .button-container::after {
+    top: -1px;
+    right: -3px;
+    border-right: 2px solid #0377BC;
+    border-bottom: 2px solid #0377BC;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s; }
+  .button-container:hover::before, .button-container:hover::after {
+    height: calc(1em + 12px + 12px + 3px + 3px);
+    width: calc(100% + 3px + 3px);
+    opacity: 1; }
+  .button-container:hover::before {
+    transition: 0s ease opacity .6s, .2s ease height .6s , .4s ease width .8s; }
+  .button-container:hover::after {
+    transition: 0s ease opacity 0s, .2s ease height, .4s ease width .2s; }
+  .button-container_border_white::before {
+    bottom: -1px;
+    left: -3px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s; }
+  .button-container_border_white::after {
+    top: -1px;
+    right: -3px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s; }
+
 .background-title {
   position: absolute;
   z-index: -1;
@@ -679,3 +744,18 @@ body {
       text-align: right; }
     .navigation__element_triangle {
       font-size: 1.4em; }
+
+.hover .main-color {
+  transition: ease all 0.5s; }
+
+.hover:hover .main-color {
+  color: #974C4E; }
+
+.hover-footer-icon .main-color, .hover-footer-icon .fa-inverse {
+  transition: ease all 0.5s; }
+
+.hover-footer-icon:hover .fa-inverse {
+  color: #974C4E; }
+
+.hover-footer-icon:hover .main-color {
+  color: white; }

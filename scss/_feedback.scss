@@ -22,6 +22,14 @@
     padding: 12px 20px;
     background-color: $color-main;
 
+    &:hover {
+      background-color: #2685bc;
+    }
+
+    &:active {
+      background-color: #035c98;
+    }
+
     @media (max-width: 900px) {
       width: 60%;
     }
