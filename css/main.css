@@ -200,7 +200,7 @@
       .info__button {
         margin: auto; } }
   .info__background-title_position_left {
-    bottom: -9vw;
+    bottom: -2vw;
     top: auto;
     left: -47px; }
 
@@ -670,9 +670,12 @@ body {
   .navigation__element {
     margin: 10px 23px;
     font-size: 1.6em;
-    line-height: 1em; }
+    line-height: 1em;
+    cursor: pointer; }
     .navigation__element_active {
       width: 0.4em;
       height: 0.4em;
       border: 0.08em solid;
       text-align: right; }
+    .navigation__element_triangle {
+      font-size: 1.4em; }

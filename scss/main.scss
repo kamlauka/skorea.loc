@@ -143,12 +143,17 @@ body {
     margin: 10px 23px;
     font-size: 1.6em;
     line-height: 1em;
+    cursor: pointer;
 
     &_active {
       width: 0.4em;
       height: 0.4em;
       border: 0.08em solid;
       text-align: right;
+    }
+
+    &_triangle {
+      font-size: 1.4em;
     }
   }
 }
