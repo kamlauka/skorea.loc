@@ -75,7 +75,8 @@
   align-items: center;
   position: relative;
   height: calc(100vh - 43px);
-  min-height: 600px; }
+  min-height: 600px;
+  overflow: hidden; }
   @media (max-width: 768px) {
     .title-page {
       height: 40vh;
@@ -452,6 +453,9 @@
     font-size: 0.8em;
     text-align: center;
     font-weight: bold; }
+    @media (max-width: 400px) {
+      .auto-price__cell {
+        padding: 10px; } }
     .auto-price__cell_text_gray {
       color: #545454; }
     .auto-price__cell_text_white {

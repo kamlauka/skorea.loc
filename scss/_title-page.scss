@@ -6,6 +6,7 @@
   position: relative;
   height: calc(100vh - 43px);
   min-height: 600px;
+  overflow: hidden;
 
   @media (max-width: $width-mobile) {
     height: 40vh;

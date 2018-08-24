@@ -1,0 +1,24 @@
+{
+  "name": "skorea.loc",
+  "version": "1.0.0",
+  "description": "лендинг импорт машин из кореи",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://NastyaTER@bitbucket.org/terlabs/skoreacar.git"
+  },
+  "author": "suvorova a",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/terlabs/skoreacar#readme"
+}

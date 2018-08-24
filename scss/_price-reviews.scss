@@ -50,6 +50,10 @@
     text-align: center;
     font-weight: bold;
 
+    @media (max-width: 400px) {
+      padding: 10px;
+    }
+
     &_text_gray {
       color: $color-add-gray;
     }
