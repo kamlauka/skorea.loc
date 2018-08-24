@@ -29,6 +29,8 @@
 
     @media (max-width: $width-mobile) {
       margin: auto;
+      position: relative;
+      top: 80px;
     }
   }
   &__background-title_position_left {

@@ -29,6 +29,16 @@
     }
   }
 
+  &__container-four-rhomb_left-bottom {
+    left: 3vw;
+    bottom: 0;
+  }
+
+  &__container-four-rhomb_right-bottom {
+    right: 3vw;
+    bottom: 0;
+  }
+
   &__logo-container {
     display: flex;
     justify-content: center;
