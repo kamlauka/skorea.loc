@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
     js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.1';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<a name="title-page"></a>
+<a id="title-page" name="title-page"></a>
 <header class="header main-padding">
     <div class="social-icons header__social-icons">
         <a class="social-icons__icon hover" href="">
@@ -107,9 +107,9 @@
     </a>
 </section>
 
-<a name="about-us"></a>
+<a id="about-us" name="about-us"></a>
 <section class="about-us">
-    <div class="navigation">
+    <div class="navigation navigation_under-all">
         <p class="navigation__title">О нас <span class="navigation__digit">2</span></p>
         <a class="anchor" href="#title-page"><p class="navigation__element">&#9632;</p></a>
         <p class="navigation__element navigation__element_active"></p>
@@ -142,7 +142,7 @@
     <iframe class="about-us__video" src="https://www.youtube.com/embed/8W1fuOnFxRU" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<a name="info"></a>
+<a id="info" name="info"></a>
 <section class="info">
     <div class="navigation navigation_under-all">
         <p class="navigation__title">Информация для вас <span class="navigation__digit">3</span></p>
@@ -240,7 +240,7 @@
     </div>
 </section>
 
-<a name="popular"></a>
+<a id="popular" name="popular"></a>
 <section class="popular">
     <div class="navigation">
         <p class="navigation__title">Популярные авто <span class="navigation__digit">4</span></p>
@@ -289,7 +289,7 @@
     </div>
 </section>
 
-<a name="price-reviews"></a>
+<a id="price-reviews" name="price-reviews"></a>
 <section class="price-reviews">
     <div class="navigation">
         <p class="navigation__title">Цена\Качество <span class="navigation__digit">5</span></p>
@@ -417,7 +417,7 @@
 
 </section>
 
-<a name="feedback"></a>
+<a id="feedback" name="feedback"></a>
 <section class="feedback">
     <div class="container-four-rhomb feedback__container-four-rhomb_left-bottom">
         <div class="container-four-rhomb__rhomb container-four-rhomb__rhomb_position_top-left rhomb rhomb_grey-one"></div>
@@ -554,10 +554,13 @@
         }
     });
 
-    $(function(){
-        $("a[href^='#']").click(function(){
-            var _href = $(this).attr("href");
-            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    $(document).ready(function() {
+        $("a.anchor").click(function() {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({
+                scrollTop: destination
+            }, 800);
             return false;
         });
     });
